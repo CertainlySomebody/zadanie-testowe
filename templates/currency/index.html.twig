@@ -5,8 +5,8 @@
 {% block body %}
     {% for item in data %}
         <div class="currencyItem">
-            <p>{{ item.currency }}</p>
-            1 {{ item.code }} = {{ item.mid }} zł
+            <p>{{ item.name }}</p>
+            1 {{ item.getCurrencyCode }} = {{ item.getExchangeRate }} zł
         </div>
     {% endfor %}
 {% endblock %}
